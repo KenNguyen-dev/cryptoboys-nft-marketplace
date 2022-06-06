@@ -17,8 +17,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -31,8 +30,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -68,7 +66,7 @@
   "sourceMap": "69:493:2:-:0;;;162:45;;;;;;;;;;191:10;183:5;;:18;;;;;;;;;;;;;;;;;;69:493;;;;;;",
   "deployedSourceMap": "69:493:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;391:168;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;119:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;94:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;280:105;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;391:168;260:5;;;;;;;;;;246:19;;:10;:19;;;242:26;;;454:19:::1;487:11;454:45;;506:8;:21;;;528:24;;506:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;::::0;::::1;;;;;;;;;267:1;242:26:::0;391:168;:::o;119:36::-;;;;:::o;94:20::-;;;;;;;;;;;;:::o;280:105::-;260:5;;;;;;;;;;246:19;;:10;:19;;;242:26;;;370:9:::1;343:24;:36;;;;242:26:::0;280:105;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.8.0;\r\n\r\ncontract Migrations {\r\n  address public owner;\r\n  uint public last_completed_migration;\r\n\r\n  constructor() {\r\n    owner = msg.sender;\r\n  }\r\n\r\n  modifier restricted() {\r\n    if (msg.sender == owner) _;\r\n  }\r\n\r\n  function setCompleted(uint completed) public restricted {\r\n    last_completed_migration = completed;\r\n  }\r\n\r\n  function upgrade(address new_address) public restricted {\r\n    Migrations upgraded = Migrations(new_address);\r\n    upgraded.setCompleted(last_completed_migration);\r\n  }\r\n}\r\n",
-  "sourcePath": "D:\\Project\\cryptoboys-nft-marketplace\\src\\contracts\\Migrations.sol",
+  "sourcePath": "D:\\Project\\cryptoboyz-nft\\cryptoboys-nft-marketplace\\src\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -1512,6 +1510,12 @@
     "version": "0.7.0+commit.9e61f92b.Emscripten.clang"
   },
   "networks": {
+    "1337": {
+      "events": {},
+      "links": {},
+      "address": "0xdfB5639eD00DCE6d7ee0D2102Ac4E6b0669B9A02",
+      "transactionHash": "0x26bc128d0a567937c4841a2c6f5711d8b5b197bd8af37a9bccef3ef4dd9449a0"
+    },
     "1615634045645": {
       "events": {},
       "links": {},
@@ -1553,11 +1557,46 @@
       "links": {},
       "address": "0x6057D3aC12268e9588b40b776711e01c48dd2082",
       "transactionHash": "0xee617f8a21e92183f333b85836ab25009688ca5e8cae484fe444d7314fbe55d4"
+    },
+    "1648402481969": {
+      "events": {},
+      "links": {},
+      "address": "0xa101B2F549Cde31434240040CA912d89322b01a4",
+      "transactionHash": "0x0e73f1aa2374574f0afdba34acf4065090fe7c7d4f9e3df08f2185abc2c21a79"
+    },
+    "1648498683396": {
+      "events": {},
+      "links": {},
+      "address": "0x8aE5203c7a3AC42Cae0ccc7B5de334b0E3567258",
+      "transactionHash": "0x1c2b713bf712c52bd86e7c9649c83288950c9905cf64f536e9cf81826d6744b1"
+    },
+    "1648520533856": {
+      "events": {},
+      "links": {},
+      "address": "0xA842ae31D86C13b690Bbd866F714a3C10AF0939c",
+      "transactionHash": "0xc3075a222d08a7b53c1dae3a6d78319b483252de80b29115b49fe155024acd9f"
+    },
+    "1648873888740": {
+      "events": {},
+      "links": {},
+      "address": "0x9e05486f0eb46F0fDe8A8b63Fcd39e407FA2fA9a",
+      "transactionHash": "0x2e1463af717007fc970fa59a7faf96d565929510bffa723529598c161ae58281"
+    },
+    "1649157947897": {
+      "events": {},
+      "links": {},
+      "address": "0x80e78C21122d058D264b9a983b76a0DfaC12A4bA",
+      "transactionHash": "0x58d79f004fce63839cb43cf04db26d1701698201c12c35433f2444d1e2fa3705"
+    },
+    "1649234157271": {
+      "events": {},
+      "links": {},
+      "address": "0xea2D2669B70f16177257B24354Da854b43656079",
+      "transactionHash": "0x61816162c0cb50840e1c0091de6a607155528934f7d274388713705de8abf27e"
     }
   },
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-03-05T17:00:17.517Z",
-  "networkType": "ethereum",
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-09T15:16:28.164Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
