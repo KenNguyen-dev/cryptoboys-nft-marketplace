@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "description": "HUFT Marketplace",
   "author": "kennguyendev-thinhcryptoz",
-  "homepage": "https://devpavan04.github.io/cryptoboys-nft-marketplace",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@openzeppelin/contracts": "^4.5.0",
